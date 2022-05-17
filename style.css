@@ -22,6 +22,12 @@ a:visited {
 
 /* NAV */
 
+.nav-logo {
+  height: 20px;
+  width: 128px;
+  vertical-align: middle;
+}
+
 .nav {
   font-size: small;
   font-weight: 500;
@@ -36,24 +42,17 @@ a:visited {
   white-space: nowrap;
 }
 
-.logo-wrapper {
+.nav-menu {
   display: inline-block;
+  position: absolute;
+  right: 2em;
 }
 
-.logo-wrapper,
-.ul1,
-.ul2 {
-  width: calc(100% / 3);
-  margin: 0, -2px;
-}
-
-.nav-logo {
-  height: 14px;
-  vertical-align: middle;
-}
-
-.ul2 {
-  text-align: end;
+.nav-items {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 ul {
@@ -152,7 +151,7 @@ footer {
   display: none;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1180px) {
   .d-sm-inline-block {
     display: inline-block;
   }
